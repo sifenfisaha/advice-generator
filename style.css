@@ -100,6 +100,9 @@ hr {
 }
 @media (max-width: 450px) {
   .continer {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 10px 40px 10px;
+  }
+  .advice {
+    font-size: 25px;
   }
 }
