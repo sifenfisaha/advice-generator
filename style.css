@@ -68,11 +68,29 @@ hr {
   transform: translate(-50%, 0%);
   cursor: pointer;
 }
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.rotate-360 {
-  transform: rotate(360deg);
+  padding: 20px;
 }
 
-.icon {
-  transition: 1s ease-in-out;
+.line {
+  flex-grow: 1;
+  border: none;
+  border-top: 2px solid #5f6b7a;
+  margin: 0 10px;
+}
+
+.pause-icon {
+  display: flex;
+  gap: 6px;
+}
+
+.pause-bar {
+  width: 8px;
+  height: 25px;
+  background-color: #d0e6f5;
+  border-radius: 4px;
 }
