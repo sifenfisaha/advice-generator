@@ -55,7 +55,7 @@ hr {
   border-top: 2px solid hsla(193, 38%, 86%, 0.098);
 }
 
-.rollbtn {
+/* .rollbtn {
   padding: 20px;
   border: none;
   background-color: hsl(150, 100%, 66%);
@@ -68,7 +68,7 @@ hr {
   left: 50%;
   transform: translate(-50%, 0%);
   cursor: pointer;
-}
+} */
 .glow {
   box-shadow: 0 0 20px hwb(150 32% 0% / 0.281);
 }
@@ -98,11 +98,45 @@ hr {
   background-color: #d0e6f5;
   border-radius: 4px;
 }
+
+#btn {
+  border-radius: 50%;
+  background-color: #53feaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  cursor: pointer;
+  border: none;
+}
+#icon {
+  padding: 1rem;
+}
+.roll-img {
+  animation: rolling 0.5s linear infinite;
+}
+.stoprolling {
+  animation: none;
+}
+@keyframes rolling {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 450px) {
   .continer {
     padding: 40px 10px 40px 10px;
   }
   .advice {
     font-size: 25px;
+  }
+  #btn {
+    left: 40%;
   }
 }
