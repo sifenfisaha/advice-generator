@@ -1,4 +1,5 @@
 const xhr = new XMLHttpRequest();
+const image = document.getElementById("icon");
 const count = document.querySelector("#count");
 const advice = document.querySelector("#advice");
 const btn = document.querySelector("#btn");
@@ -9,6 +10,7 @@ function generateAdvice() {
       const data = JSON.parse(this.responseText);
       advice.innerHTML = `"${data.slip.advice}"`;
       count.innerHTML = data.slip.id;
+      image.classList.toggle("rotate-360");
     }
   };
   xhr.send();

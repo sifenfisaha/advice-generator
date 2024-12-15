@@ -14,7 +14,7 @@ body {
 }
 .continer {
   max-width: 550px;
-  padding: 50px;
+  padding: 40px;
   background-color: hsl(217, 19%, 24%);
   border-radius: 20px;
   position: relative;
@@ -62,4 +62,10 @@ hr {
   left: 50%;
   transform: translate(-50%, 0%);
   cursor: pointer;
+}
+.rotate-360 {
+  transform: rotate(360deg);
+}
+.icon {
+  transition: 1s ease-in-out;
 }
